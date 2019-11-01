@@ -2,8 +2,7 @@
 
 class OrdersController < ApplicationController
   def index
-    # @drivers = Driver.all
-    @ordera = Order.order(:fullName)
+    @orders = Order.order(:name)
   end
 
   def show

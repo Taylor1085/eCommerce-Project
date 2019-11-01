@@ -2,7 +2,6 @@
 
 class CustomersController < ApplicationController
   def index
-    # @drivers = Driver.all
     @customers = Customer.order(:name)
   end
 
